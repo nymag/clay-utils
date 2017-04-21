@@ -4,7 +4,7 @@ Utility functions for working with Clay
 # Installation
 
 ```
-npm install --save nymag-handlebars
+npm install --save clay-utils
 ```
 
 ---
