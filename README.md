@@ -12,3 +12,4 @@ npm install --save clay-utils
 # Utils
 
 - getComponentName [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/develop/lib/getComponentName)
+- isDefaultComponent [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/develop/lib/isDefaultComponent)
