@@ -42,7 +42,7 @@ Get component version from uri
 #### Example
 
 ```js
-getComponentName('nymag.com/press/components/base/instances/foobarbaz@published')
+getComponentVersion('nymag.com/press/components/base/instances/foobarbaz@published')
 //=> 'published'
 
 ```
