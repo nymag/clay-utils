@@ -12,3 +12,4 @@ npm install --save nymag-handlebars
 # Utils
 
 - getComponentName [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/develop/lib/getComponentName)
+- getComponentVersion [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/develop/lib/getComponentVersion)
