@@ -1,5 +1,4 @@
---reporter spec
+--reporter dot
 --ui bdd
---require ./test/index.js
---recursive
-**/*.test.js
+--slow 50
+--timeout 200
