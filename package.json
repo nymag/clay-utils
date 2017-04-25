@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "glob": "^7.1.1",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "nymag-fs": "^1.0.0"
   }
 }

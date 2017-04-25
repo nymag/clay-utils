@@ -1,27 +1,25 @@
 'use strict';
 
-module.exports.getComponentInstance = require('./lib/getComponentInstance/getComponentInstance');
-module.exports.getComponentName = require('./lib/getComponentName/getComponentName');
-module.exports.getComponentVersion = require('./lib/getComponentVersion/getComponentVersion');
-module.exports.isComponent = require('./lib/isComponent/isComponent');
-module.exports.isDefaultComponent = require('./lib/isDefaultComponent/isDefaultComponent');
-module.exports.replaceVersion = require('./lib/replaceVersion/replaceVersion');
+const nymagfs = require('nymag-fs'),
+  path = require('path');
 
-// const glob = require('glob'),
-//   path = require('path');
+var req = require;
 
+/**
+ * @param {function} value
+ */
+function setRequire(value) {
+  req = value;
+}
 
-// // filter out tests from globbed files
-// function noTests(filename) {
-//   return filename.indexOf('.test.js') === -1;
-// }
+// require each index.js file from each util folder
+module.exports.requireUtils = function () {
+  const utils = nymagfs.getFolders('lib');
 
-// module.exports = function () {
-//   const utils = glob.sync(path.resolve(__dirname, 'lib', '**', '*.js')).filter(noTests);
+  utils.forEach(function (util) {
+    module.exports[util] = req(path.resolve(__dirname, 'lib', util, 'index.js'));
+  });
+};
 
-//   // ['filea.js', 'fileb.js'];
-
-//   utils.forEach(function (util) {
-//     module.exports[util] = require(util);
-//   });
-// };
+// for testing
+module.exports.setRequire = setRequire;
