@@ -21,6 +21,7 @@ function requireUtils() {
   });
 }
 
+requireUtils();
 module.exports.requireUtils = requireUtils;
 
 // for testing
