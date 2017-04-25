@@ -4,7 +4,9 @@
   "description": "A collection of utility functions for working with Clay.",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover _mocha"
+    "lint": "eslint lib test index.js index.test.js",
+    "test-local": "istanbul cover _mocha",
+    "test": "npm run lint && istanbul cover _mocha"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/nymag/clay-utils#readme",
   "devDependencies": {
     "chai": "^3.5.0",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "pre-commit": "^1.2.2",
