@@ -27,11 +27,11 @@ describe(_.startCase(filename), function () {
 
   describe('requireUtils', function () {
     const fn = lib[this.title],
-    fakeArr = ['filea', 'fileb', 'filec'];
+      fakeArr = ['filea', 'fileb', 'filec'];
 
     it('requires each file in the array returned by getFolders', function () {
       sandbox.stub(nymagfs, 'getFolders').returns(fakeArr);
-      req.returns('value')
+      req.returns('value');
       fn();
 
       expect(req.callCount).to.equal(fakeArr.length);
