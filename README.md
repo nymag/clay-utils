@@ -1,5 +1,8 @@
 # clay-utils
 
+[![Build Status](https://travis-ci.org/nymag/clay-utils.svg?branch=master)](https://travis-ci.org/nymag/clay-utils)
+[![Coverage Status](https://coveralls.io/repos/github/nymag/clay-utils/badge.svg?branch=master)](https://coveralls.io/github/nymag/clay-utils?branch=master)
+
 Utility functions for working with Clay
 
 # Installation
