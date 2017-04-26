@@ -5,8 +5,7 @@ const nymagfs = require('nymag-fs'),
   _ = require('lodash'),
   path = require('path'),
   fs = require('fs'),
-  chalk = require('chalk'),
-  glob = require('glob');
+  chalk = require('chalk');
 
 let tpl, data = {};
 
