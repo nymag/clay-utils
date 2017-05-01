@@ -1,10 +1,10 @@
 'use strict';
 
 const _ = require('lodash'),
+  glob = require('glob'),
   filename = __filename.split('/').pop().split('.').shift(),
   expect = require('chai').expect,
   sinon = require('sinon'),
-  nymagfs = require('nymag-fs'),
   lib = require('./' + filename);
 
 
@@ -30,12 +30,10 @@ describe(_.startCase(filename), function () {
       fakeArr = ['filea', 'fileb', 'filec'];
 
     it('requires each file in the array returned by getFolders', function () {
-      sandbox.stub(nymagfs, 'getFolders').returns(fakeArr);
-      req.returns('value');
+      sandbox.stub(glob, 'sync').returns(fakeArr);
       fn();
 
       expect(req.callCount).to.equal(fakeArr.length);
-      expect(lib['filea']).to.equal('value');
     });
   });
 });

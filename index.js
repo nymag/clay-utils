@@ -1,6 +1,6 @@
 'use strict';
 
-const nymagfs = require('nymag-fs'),
+const glob = require('glob'),
   path = require('path');
 
 var req = require;
@@ -12,12 +12,20 @@ function setRequire(value) {
   req = value;
 }
 
+// filter out tests from globbed files
+function noTests(filename) {
+  return filename.indexOf('.test.js') === -1;
+}
+
+
 // require each index.js file from each util folder
 function requireUtils() {
-  const utils = nymagfs.getFolders('lib');
+  const utils = glob.sync(path.resolve(__dirname, 'lib', '**', '*.js')).filter(noTests);
 
   utils.forEach(function (util) {
-    module.exports[util] = req(path.resolve(__dirname, 'lib', util));
+    if (path.basename(path.dirname(util)) !== 'lib') {
+      module.exports[path.basename(path.dirname(util))] = req(path.resolve(__dirname, 'lib', path.basename(path.dirname(util), '.js'), 'index'));
+    }
   });
 }
 
