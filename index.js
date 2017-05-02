@@ -14,7 +14,7 @@ function setRequire(value) {
 
 // require each index.js file from each util folder
 function requireUtils() {
-  const utils = nymagfs.getFolders('lib');
+  const utils = nymagfs.getFolders(path.resolve(__dirname, 'lib'));
 
   utils.forEach(function (util) {
     module.exports[util] = req(path.resolve(__dirname, 'lib', util));

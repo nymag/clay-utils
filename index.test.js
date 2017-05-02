@@ -2,9 +2,9 @@
 
 const _ = require('lodash'),
   filename = __filename.split('/').pop().split('.').shift(),
+  nymagfs = require('nymag-fs'),
   expect = require('chai').expect,
   sinon = require('sinon'),
-  nymagfs = require('nymag-fs'),
   lib = require('./' + filename);
 
 
