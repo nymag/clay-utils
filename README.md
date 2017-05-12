@@ -15,11 +15,11 @@ npm install --save clay-utils
 
 # Utils:
 
-* **getComponentInstance** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentInstance)
-* **getComponentName** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentName)
-* **getComponentVersion** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentVersion)
-* **getPageInstance** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getPageInstance)
-* **isComponent** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isComponent)
-* **isDefaultComponent** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isDefaultComponent)
-* **isPage** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isPage)
-* **replaceVersion** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/replaceVersion)
+* **getComponentInstance** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentInstance)
+* **getComponentName** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentName)
+* **getComponentVersion** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentVersion)
+* **getPageInstance** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/getPageInstance)
+* **isComponent** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/isComponent)
+* **isDefaultComponent** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/isDefaultComponent)
+* **isPage** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/isPage)
+* **replaceVersion** [(code | tests | docs)](https://github.com/nymag/clay-utils/tree/master/lib/replaceVersion)

@@ -20,7 +20,7 @@ function reduceUtils(result, util) {
 
   return result;
 }
-// register utilDoc as a partial to use in readme.hbs
+// register utilDoc as a partial to use in repo-readme.hbs
 _.each([
   'utilDoc'
 ], function (basename) {
@@ -32,6 +32,6 @@ data = {
 };
 
 // compile the template and run it
-tpl = hbs.compile(fs.readFileSync(path.join(__dirname, 'readme.hbs'), 'utf8'));
+tpl = hbs.compile(fs.readFileSync(path.join(__dirname, 'repo-readme.hbs'), 'utf8'));
 fs.writeFileSync(path.join(__dirname, '..', 'README.md'), tpl(data));
-console.log(`${chalk.green('[DONE]')} Generated README`);
+console.log(`${chalk.green('[DONE]')} Generated repo README`);
