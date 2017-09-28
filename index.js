@@ -1,28 +1,10 @@
 'use strict';
-
-const nymagfs = require('nymag-fs'),
-  path = require('path');
-
-var req = require;
-
-/**
- * @param {function} value
- */
-function setRequire(value) {
-  req = value;
-}
-
-// require each index.js file from each util folder
-function requireUtils() {
-  const utils = nymagfs.getFolders(path.resolve(__dirname, 'lib'));
-
-  utils.forEach(function (util) {
-    module.exports[util] = req(path.resolve(__dirname, 'lib', util));
-  });
-}
-
-requireUtils();
-module.exports.requireUtils = requireUtils;
-
-// for testing
-module.exports.setRequire = setRequire;
+module.exports.getComponentInstance = require('./lib/getComponentInstance');
+module.exports.getComponentName = require('./lib/getComponentName');
+module.exports.getComponentVersion = require('./lib/getComponentVersion');
+module.exports.getPageInstance = require('./lib/getPageInstance');
+module.exports.isComponent = require('./lib/isComponent');
+module.exports.isDefaultComponent = require('./lib/isDefaultComponent');
+module.exports.isPage = require('./lib/isPage');
+module.exports.isList = require('./lib/isList');
+module.exports.replaceVersion = require('./lib/replaceVersion');
