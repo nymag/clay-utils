@@ -13,7 +13,7 @@ describe(_.startCase(filename), function () {
     fs.readdirSync('./lib')
       .filter(file => fs.statSync('./lib/' + file).isDirectory())
       .forEach((util) => {
-        expect(lib).to.have.property(util);
+        expect(lib[util]).to.eql(require(`./lib/${util}`));
       });
   });
 });

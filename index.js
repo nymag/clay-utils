@@ -5,5 +5,6 @@ module.exports.getComponentVersion = require('./lib/getComponentVersion');
 module.exports.getPageInstance = require('./lib/getPageInstance');
 module.exports.isComponent = require('./lib/isComponent');
 module.exports.isDefaultComponent = require('./lib/isDefaultComponent');
-module.exports.isPage = require('./lib/replaceVersion');
+module.exports.isPage = require('./lib/isPage');
+module.exports.isList = require('./lib/isList');
 module.exports.replaceVersion = require('./lib/replaceVersion');
