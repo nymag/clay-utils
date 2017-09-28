@@ -1,6 +1,6 @@
-### getPageInstance
+### getListInstance
 
-Get page instance from uri
+Get list instance from uri
 
 #### Params
 
@@ -11,7 +11,7 @@ Get page instance from uri
 #### Example
 
 ```js
-getPageInstance('nymag.com/scienceofus/pages/foobarbaz@published')
-//=> 'foobarbaz@published'
+getPageInstance('nymag.com/lists/foo')
+//=> 'foo'
 
 ```
