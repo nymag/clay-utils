@@ -19,6 +19,7 @@ npm install --save clay-utils
 * **getComponentName** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentName)
 * **getComponentVersion** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getComponentVersion)
 * **getPageInstance** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getPageInstance)
+* **getPageVersion** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/getPageVersion)
 * **isComponent** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isComponent)
 * **isDefaultComponent** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isDefaultComponent)
 * **isList** [(code|tests|docs)](https://github.com/nymag/clay-utils/tree/master/lib/isList)
