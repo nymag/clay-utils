@@ -9,4 +9,5 @@ module.exports.isComponent = require('./lib/isComponent');
 module.exports.isDefaultComponent = require('./lib/isDefaultComponent');
 module.exports.isPage = require('./lib/isPage');
 module.exports.isList = require('./lib/isList');
+module.exports.isUser = require('./lib/isUser');
 module.exports.replaceVersion = require('./lib/replaceVersion');
